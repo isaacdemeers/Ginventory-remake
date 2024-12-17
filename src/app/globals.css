@@ -17,13 +17,13 @@ body {
   :root {
     --background: 35 47% 96%;
     --foreground: 0 0% 3.9%;
-    --text: 0 84.2% 60.2%;
+    --text: 30 0% 20%;
     --accent: 42 99% 53%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
+    --primary: 30 0% 20%;
     --primary-foreground: 0 0% 98%;
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
