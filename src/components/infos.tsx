@@ -8,13 +8,13 @@ import { Separator } from "./ui/separator";
 import { BS_Medium } from "@/lib/fonts";
 export default function Infos() {
 
-    const liStyle = 'w-full flex items-center justify-center gap-2 text-3xl m-2 p-4'
+    const liStyle = 'w-full flex items-center justify-center gap-8 text-3xl m-2 p-4'
     const imgStyle = 'h-15 w-auto'
     const textStyle = 'text-text text-6xl'
 
     return (
-        <div className={`${BS_Medium.className}  w-full flex items-center justify-center bg-blue-200`}>
-            <ul className="flex items-center justify-center flex-col bg-purple-200 w-full">
+        <section className={`${BS_Medium.className}  w-full flex items-center justify-center `}>
+            <ul className="flex items-center justify-center flex-col  w-full">
                 <Separator />
                 <li className={liStyle}>
                     <h3 className={textStyle}>6500+ Gins</h3>
@@ -33,6 +33,6 @@ export default function Infos() {
                 </li>
                 <Separator />
             </ul>
-        </div>
+        </section>
     )
 }

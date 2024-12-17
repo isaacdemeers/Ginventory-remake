@@ -4,7 +4,7 @@ import { BS_Medium } from "@/lib/fonts";
 
 export default function Footer() {
     return (
-        <footer className={`${BS_Medium.className} flex items-center justify-between w-full h-40 bg-blue-400`}>
+        <footer className={`${BS_Medium.className} flex items-center justify-between w-full h-72 `}>
             <div className="flex items-center justify-center gap-2">
                 <p className="hidden md:block text-text">Join our community on</p>
                 <Social />
