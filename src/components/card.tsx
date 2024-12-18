@@ -1,25 +1,70 @@
+
+import Image, { StaticImageData } from "next/image";
+import { BS_Medium, BS_Light_Italic } from "@/lib/fonts";
+
 interface Props {
-    number: number;
-    text: string;
-    image: string;
-    gravity: string;
+    number?: string;
+    text?: string;
+    image: StaticImageData;
+    gravity?: string;
     className?: string;
 }
-import Image from "next/image";
-
-import Logo from "@img/Ginventory/logo-ginventory-simple.png";
 
 export default function Card({ number, text, image, gravity, className }: Props) {
-    return (
-        <div className={`w-full h-full flex flex-col items-center justify-center gap-4 bg-red-500 rounded-[20px] ${className}`}>
-            <div className="w-full h-full ">
-                <h1>{number}</h1>
-                <p>{text}</p>
-                <p>{gravity}</p>
-            </div>
+
+    let container = 'w-full h-full flex flex-col items-center justify-center gap-4 overflow-hidden bg-red-500 rounded-[20px]';
+
+    const Figure = () => {
+        return (
             <figure className="w-full h-full bg-blue-500">
-                <Image src={Logo} alt={text} width={100} height={100} />
+                <Image src={image} alt="Preview" width={100} height={100} />
             </figure>
-        </div>
-    )
+        )
+    }
+
+    const Content = () => {
+        return (
+            <div className="w-full h-full flex flex-col items-center justify-center gap-4">
+                <h1 className={`${BS_Light_Italic.className} text-text text-xs font-bold`}>{number}</h1>
+                <p className={`${BS_Medium.className} text-text text-xl`}>{text}</p>
+            </div>
+        )
+    }
+
+    if (text) {
+
+        if (gravity === "bottom") {
+            return (
+                <div className={`${container} ${className}`}>
+                    <Figure />
+                    <Content />
+                </div>
+            );
+        }
+
+        if (gravity === "top") {
+            return (
+                <div className={`${container} ${className}`}>
+                    <Content />
+                    <Figure />
+                </div>
+            );
+        }
+
+        else {
+            return (
+                <div className={`${container} ${className}`}>
+                    <Content />
+                    <Figure />
+                </div>
+            );
+        }
+    }
+    else {
+        return (
+            <div className={`${container} ${className}`}>
+                <Figure />
+            </div>
+        )
+    }
 }
