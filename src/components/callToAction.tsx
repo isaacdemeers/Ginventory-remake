@@ -14,13 +14,13 @@ export default function CallToAction() {
     const { scrollYProgress } = useScroll({
         offset: ["start start", "end end"]
     });
-    const rotateLeft = useTransform(scrollYProgress, [0, 1], [-40, -20]);
-    const rotateRight = useTransform(scrollYProgress, [0, 1], [150, 190]);
+    const rotateLeft = useTransform(scrollYProgress, [0, 1], [-60, -20]);
+    const rotateRight = useTransform(scrollYProgress, [0, 1], [130, 190]);
 
 
     return (
         <section className={`${BS_Medium.className} relative w-full flex items-center justify-center flex-col gap-12  py-10`}>
-            <motion.div style={{ rotate: rotateLeft }} transition={{ duration: 0.5, delay: 0.5 }} className="absolute top-[-10%] left-[-40%] md:block w-[680px] aspect-square">
+            <motion.div style={{ rotate: rotateLeft }} transition={{ duration: 0.5, delay: 0.5 }} className="absolute top-[-5%] scale-95 left-[-40%] md:block w-[680px] aspect-square">
                 <Image src={LogoApple} alt="Ginventory Logo" className=" w-full h-full" />
             </motion.div>
 
