@@ -30,7 +30,7 @@ export default function CallToAction() {
 
             <Image src={Logo} alt="Ginventory Logo" width={73} className="mb-10" />
             <div className="flex items-center justify-center flex-col gap-4">
-                <h1 className={`text-3xl font-bold text-text ${BS_Light.className}`}>Just test Ginventory, you won't regret it</h1>
+                <h1 className={`text-3xl font-bold text-text ${BS_Light.className}`}>Just test Ginventory, you won&apos;t regret it</h1>
                 <p className="text-xl text-text">4,5/5 note on Apple Store</p>
             </div>
             <GetApp />
