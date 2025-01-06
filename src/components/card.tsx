@@ -83,7 +83,7 @@ export default function Card({ id, number, text, image, gravity, className }: Pr
         card = <Figure />
     }
 
-    return <motion.div className={`${container} ${className}`} style={{ y: -yPos }}>
+    return <motion.div className={`${container} ${className}`} >
         {card}
-    </motion.div>
+    </motion.div >
 }

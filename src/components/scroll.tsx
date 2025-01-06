@@ -20,7 +20,7 @@ export default function Scroll() {
         <div className=" w-full min-h-screen  grid grid-cols-12 grid-rows-20 gap-4">
             <Card id={1} image={Picture1} className="col-span-2 row-span-2 col-start-3 row-start-2" />
             <Card id={2} number={'01'} text="Search for a specific Gin, a tonic or a botanical" image={Picture2} gravity="top" className="col-span-6 row-span-4 col-start-6 row-start-2" />
-            <Card id={3} number={'02'} text="Find Gins and their perfect serve" image={Picture3} gravity="bottom" className="col-span-4 row-span-4 col-start-2 row-start-5" />
+            <Card id={3} number={'02'} text="Find Gins and their perfect serve" image={Picture3} gravity="top" className="col-span-4 row-span-4 col-start-2 row-start-5" />
             <Card id={4} image={Picture4} className="col-span-5 row-span-4 col-start-8 row-start-8" />
             <Card id={5} number={'03'} text="Rate or save any Gin" image={Picture5} gravity="top" className="col-span-5 row-span-3 col-start-6 row-start-10" />
             <Card id={6} number={'04'} text="Manage your Collection" image={Picture6} gravity="top" className="col-span-4 row-span-4 col-start-0 row-start-12" />
