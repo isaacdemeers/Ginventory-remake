@@ -24,8 +24,8 @@ export default function Scroll() {
             <Card id={4} image={Picture4} className="col-span-5 row-span-4 col-start-8 row-start-8" />
             <Card id={5} number={'03'} text="Rate or save any Gin" image={Picture5} gravity="top" className="col-span-5 row-span-3 col-start-6 row-start-10" />
             <Card id={6} number={'04'} text="Manage your Collection" image={Picture6} gravity="top" className="col-span-4 row-span-4 col-start-0 row-start-12" />
-            <Card id={7} image={Picture7} className="col-span-6 row-span-4 col-start-4 row-start-14" />
-            <Card id={8} number={'05'} text="Buy Gins from online partner stores" image={Picture8} gravity="bottom" className="col-span-6 row-span-4 col-start-7 row-start-14" />
+            <Card id={7} image={Picture7} className="col-span-6 row-span-4 col-start-5 row-start-13 -translate-x-20 -z-10" />
+            <Card id={8} number={'05'} text="Buy Gins from online partner stores" image={Picture8} gravity="bottom" className="col-span-6 row-span-4 col-start-7 row-start-14 -translate-y-40" />
 
 
 

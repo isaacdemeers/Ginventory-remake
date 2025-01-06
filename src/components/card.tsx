@@ -15,7 +15,8 @@ interface Props {
 export default function Card({ id, number, text, image, gravity, className }: Props) {
 
     const { scrollYProgress } = useScroll();
-    const yPos = useTransform(scrollYProgress, [0, 1], [0, 100 * id]);
+    const yPos = useTransform(scrollYProgress, [0, 1], [0, 10]);
+
 
     let customContainer = {
         1: 'w-40 h-48',
@@ -83,7 +84,12 @@ export default function Card({ id, number, text, image, gravity, className }: Pr
         card = <Figure />
     }
 
-    return <motion.div className={`${container} ${className}`} >
+    return <motion.div
+        className={`${container} ${className}`}
+        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+    >
         {card}
-    </motion.div >
+    </motion.div>
 }
